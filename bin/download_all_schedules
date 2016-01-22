@@ -1,0 +1,6 @@
+$LOAD_PATH.unshift "#{File.dirname(__FILE__)}/../lib"
+
+require 'schedules_download'
+
+download_location = ARGV
+SchedulesDownload.download_all_schedules(download_location)
